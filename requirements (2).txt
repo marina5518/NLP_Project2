@@ -1,0 +1,15 @@
+# Core — works on Streamlit Cloud
+streamlit>=1.35.0
+opencv-python-headless>=4.9.0
+mediapipe>=0.10.0
+numpy>=1.26.0
+pydantic>=2.0.0
+google-genai>=0.8.0
+python-dotenv>=1.0.0
+
+# moviepy and camel-tools are NOT available on Streamlit Cloud.
+# Tab 2 (full pipeline) only works when running locally.
+# To run locally, install these manually:
+#   pip install "moviepy==1.0.3"
+#   pip install camel-tools
+#   camel-data -i all
