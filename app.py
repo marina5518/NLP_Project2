@@ -547,7 +547,7 @@ with tab2:
                     words: list[str] = Field(description="List of words in the sentence.")
 
                 words_available = [f.name for f in Path(dataset_path).iterdir() if f.is_dir()]
-
+                print(words_available)
                 client = genai.Client(api_key=api_key)
 
                 # Retry with exponential backoff to handle 429 / quota errors
